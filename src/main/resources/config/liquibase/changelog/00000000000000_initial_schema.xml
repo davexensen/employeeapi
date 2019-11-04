@@ -152,4 +152,51 @@
             <column name="local_date" type="date"/>
         </createTable>
     </changeSet>
+
+    <changeSet author="davexensen" id="00000000000003">
+        <createTable tableName="employee">
+            <column autoIncrement="true" name="id" type="BIGINT">
+                <constraints primaryKey="true" nullable="false" primaryKeyName="pk_employee"/>
+            </column>
+            <column name="first_name" type="varchar(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="middle_initial" type="varchar(1)">
+                <constraints nullable="true"/>
+            </column>
+            <column name="last_name" type="varchar(150)">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_of_birth" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="date_of_employment" type="date">
+                <constraints nullable="false"/>
+            </column>
+            <column name="status" type="boolean">
+                <constraints nullable="false"/>
+            </column>
+            <column name="created_by" type="varchar(50)"/>
+            <column name="created_date" type="timestamp"/>
+            <column name="last_modified_by" type="varchar(50)"/>
+            <column name="last_modified_date" type="timestamp"/>
+        </createTable>
+        <createSequence sequenceName="emp_sequence" startValue="20003" incrementBy="1"/>
+    </changeSet>
+    <changeSet author="davexensen" id="00000000000004">
+        <loadData
+            file="config/liquibase/data/employee.csv"
+            separator=";"
+            tableName="employee">
+            <column name="id" type="numeric"/>
+            <column name="first_name" type="string"/>
+            <column name="middle_initial" type="string"/>
+            <column name="last_name" type="string"/>
+            <column name="date_of_birth" type="date"/>
+            <column name="date_of_employment" type="date"/>
+            <column name="status" type="boolean"/>
+            <column name="created_by" type="string"/>
+            <column name="last_modified_by" type="string"/>
+        </loadData>
+    </changeSet>
 </databaseChangeLog>
