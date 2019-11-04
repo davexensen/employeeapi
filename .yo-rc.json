@@ -1,0 +1,35 @@
+{
+  "generator-jhipster": {
+    "promptValues": {
+      "packageName": "com.davexensen.employee"
+    },
+    "jhipsterVersion": "6.4.1",
+    "applicationType": "monolith",
+    "baseName": "employeeapi",
+    "packageName": "com.davexensen.employee",
+    "packageFolder": "com/davexensen/employee",
+    "serverPort": "8080",
+    "authenticationType": "jwt",
+    "cacheProvider": "no",
+    "websocket": false,
+    "databaseType": "sql",
+    "devDatabaseType": "postgresql",
+    "prodDatabaseType": "postgresql",
+    "searchEngine": false,
+    "messageBroker": false,
+    "serviceDiscoveryType": false,
+    "buildTool": "gradle",
+    "enableSwaggerCodegen": false,
+    "jwtSecretKey": "MWUwMjQ5Zjg1YWMxZmM3MmU4YmY0Y2Y3ZmJlYzI5ZTM0ZmU1MDg4YjVlNDQzOWU5OGM0NWY0ZGVmMGU0MDI2ZThjMTUyNjRjOTY1YTliNTMyZTdmMTJjOWMwN2UzMmFkYzRiNmY1Mjg3MjM2Nzg2OWJmOTQzOGVhMTU4MjhkM2I=",
+    "embeddableLaunchScript": false,
+    "testFrameworks": [],
+    "jhiPrefix": "jhi",
+    "entitySuffix": "",
+    "dtoSuffix": "DTO",
+    "otherModules": [],
+    "enableTranslation": false,
+    "clientPackageManager": "npm",
+    "blueprints": [],
+    "skipClient": true
+  }
+}
