@@ -1,6 +1,6 @@
 # employeeapi
 
-##Running the application
+## Running the application
 
 Run the following command via a terminal prompt to add the docker image to the registry
 
@@ -35,7 +35,7 @@ The response will have your JWT token, add this to your request headers as:
     Authorization: Bearer {token}
     i.e. 'Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJhZG1pbiIsImF1dGgiOiJST0xFX0FETUlOLFJPTEVfVVNFUiIsImV4cCI6MTU3Mjk4MTY5OX0.kirs_1KYuyJT7gkNguKpwmmj4CUzjIile77T64QJ6ATi1C08SKH6PtrFPheb1FlzRiqiO4dI5iFQlSfkcJD_Zw'
 
-##JHipster documentation
+## JHipster documentation
 
 This application was generated using JHipster 6.4.1, you can find documentation and help at [https://www.jhipster.tech/documentation-archive/v6.4.1](https://www.jhipster.tech/documentation-archive/v6.4.1).
 
